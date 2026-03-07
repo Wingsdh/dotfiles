@@ -1,0 +1,11 @@
+# github
+Host github.com
+HostName github.com
+User wingsdh@gmail.com
+IdentityFile ~/.ssh/id_rsa_github
+
+# shanbay gitlab
+Host git.17bdc.com
+HostName git.17bdc.com
+User han.deng@shanbay.com
+IdentityFile ~/.ssh/id_rsa_gitlab

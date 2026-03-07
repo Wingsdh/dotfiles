@@ -1,0 +1,13 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Deng Han
+	email = han.deng@shanbay.com
+	signingkey = /Users/wings/.ssh/id_rsa_gitlab.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
