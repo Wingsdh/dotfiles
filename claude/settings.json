@@ -1,0 +1,73 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill",
+      "Read",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch",
+      "mcp__pencil"
+    ]
+  },
+  "model": "opus",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/tmux-title.sh"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/notify.sh needs_input"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/notify.sh done"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/wings/AI-Workspace/baygit-skill/ai-dev-kit/hooks/baygit/scripts/check-git-commit.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "bay-development@ai-dev-kit": true,
+    "bay-product-design@ai-dev-kit": true
+  },
+  "extraKnownMarketplaces": {
+    "ai-dev-kit": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/wings/Code/ai-coding/ai-dev-kit"
+      }
+    }
+  },
+  "skipDangerousModePermissionPrompt": true
+}

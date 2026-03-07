@@ -15,6 +15,9 @@ ln -sf "$DOTFILES/sesh/sesh.toml" ~/.config/sesh/sesh.toml
 ln -sf "$DOTFILES/npm/.npmrc" ~/.npmrc
 rm -f ~/.config/nvim
 ln -sf "$DOTFILES/nvim" ~/.config/nvim
+mkdir -p ~/.claude
+ln -sf "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md
+ln -sf "$DOTFILES/claude/settings.json" ~/.claude/settings.json
 
 # 2. 从 1Password 生成 ~/.secrets
 if command -v op &>/dev/null; then

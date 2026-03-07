@@ -14,6 +14,7 @@
 | `starship/starship.toml` | Starship 提示符主题 |
 | `sesh/sesh.toml` | Sesh 会话管理配置 |
 | `npm/.npmrc` | npm 私有源配置 |
+| `claude/` | Claude Code 配置（全局指令、设置） |
 | `Brewfile` | Homebrew 依赖清单 |
 | `.secrets.tpl` | 秘钥模板（实际值由 1Password 生成） |
 
@@ -33,6 +34,7 @@ brew bundle
 `install.sh` 会自动：
 1. 创建所有配置文件的符号链接到 `~` 目录
 2. 通过 1Password CLI (`op`) 生成 `~/.secrets`（如未安装 op，可手动从 `.secrets.tpl` 创建）
+3. 软链接 Claude Code 配置（`CLAUDE.md`、`settings.json`）
 
 ## 秘钥管理
 
