@@ -118,11 +118,6 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 export DB_PASSWORD="123456"
 export PWSHARD_PASSWORD="123456"
 
-export ANDROID_HOME=$HOME/android_sdk
-export ANDROID_SDK_ROOT=$ANDROID_HOME
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/emulator
 #eval "$(gh copilot alias -- zsh)"
 
 export LC_ALL=en_US.UTF-8
@@ -146,10 +141,10 @@ export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Created by `pipx` on 2025-08-20 07:54:41
-export PATH="$PATH:/Users/wings/.local/bin"
+export PATH="$PATH:/Users/handeng/.local/bin"
 
 # Added by Antigravity
-export PATH="/Users/wings/.antigravity/antigravity/bin:$PATH"
+export PATH="/Users/handeng/.antigravity/antigravity/bin:$PATH"
 
 # ── Claude Code aliases ──────────────────────────────────────────
 _CC_DANGER='--dangerously-skip-permissions'

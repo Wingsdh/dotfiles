@@ -2,7 +2,7 @@
 Host github.com
 HostName github.com
 User wingsdh@gmail.com
-IdentityFile ~/.ssh/id_rsa_github
+IdentityFile ~/.ssh/id_rsa
 
 # shanbay gitlab
 Host git.17bdc.com

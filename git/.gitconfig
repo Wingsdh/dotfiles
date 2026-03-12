@@ -6,7 +6,7 @@
 [user]
 	name = Deng Han
 	email = han.deng@shanbay.com
-	signingkey = /Users/wings/.ssh/id_rsa_gitlab.pub
+	signingkey = /Users/handeng/.ssh/id_rsa_gitlab.pub
 [gpg]
 	format = ssh
 [commit]
