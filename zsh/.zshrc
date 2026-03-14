@@ -151,6 +151,9 @@ export PATH="$PATH:/Users/wings/.local/bin"
 # Added by Antigravity
 export PATH="/Users/wings/.antigravity/antigravity/bin:$PATH"
 
+# Obsidian CLI
+export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
+
 # ── Claude Code aliases ──────────────────────────────────────────
 _CC_DANGER='--dangerously-skip-permissions'
 
