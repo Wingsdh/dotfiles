@@ -10,24 +10,12 @@
       "mcp__pencil"
     ]
   },
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/wings/AI-Workspace/baygit-skill/ai-dev-kit/hooks/bay-git/scripts/check-git-commit.sh"
-          }
-        ]
-      }
-    ]
-  },
   "enabledPlugins": {
+    "obsidian@obsidian-skills": true,
+    "skill-creator@claude-plugins-official": true,
     "bay-development@ai-dev-kit": true,
     "bay-lab-commands@ai-dev-kit": true,
-    "bay-product-design@ai-dev-kit": true,
-    "obsidian@obsidian-skills": true
+    "bay-product-design@ai-dev-kit": true
   },
   "extraKnownMarketplaces": {
     "wings-claude-skills": {
@@ -37,19 +25,33 @@
       },
       "autoUpdate": true
     },
-    "ai-dev-kit": {
-      "source": {
-        "source": "directory",
-        "path": "/Users/wings/Code/ai-coding/ai-dev-kit"
-      }
-    },
     "obsidian-skills": {
       "source": {
         "source": "github",
         "repo": "kepano/obsidian-skills"
       },
       "autoUpdate": true
+    },
+    "ai-dev-kit": {
+      "source": {
+        "source": "git",
+        "url": "git@git.17bdc.com:ai-coding/ai-dev-kit.git"
+      },
+      "autoUpdate": true
     }
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/wings/.claude/plugins/marketplaces/ai-dev-kit/plugins/bay-development/hooks/bay-git/scripts/check-git-commit.sh"
+          }
+        ]
+      }
+    ]
   },
   "effortLevel": "medium",
   "skipDangerousModePermissionPrompt": true
