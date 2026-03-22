@@ -15,6 +15,9 @@ ln -sf "$DOTFILES/sesh/sesh.toml" ~/.config/sesh/sesh.toml
 ln -sf "$DOTFILES/npm/.npmrc" ~/.npmrc
 rm -f ~/.config/nvim
 ln -sf "$DOTFILES/nvim" ~/.config/nvim
+mkdir -p ~/.config/gh
+ln -sf "$DOTFILES/gh/config.yml" ~/.config/gh/config.yml
+ln -sf "$DOTFILES/gh/hosts.yml" ~/.config/gh/hosts.yml
 mkdir -p ~/.claude
 ln -sf "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md
 ln -sf "$DOTFILES/claude/settings.json" ~/.claude/settings.json
