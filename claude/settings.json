@@ -10,12 +10,26 @@
       "mcp__pencil"
     ]
   },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/wings/.claude/plugins/marketplaces/ai-dev-kit/plugins/bay-development/hooks/bay-git/scripts/check-git-commit.sh"
+          }
+        ]
+      }
+    ]
+  },
   "enabledPlugins": {
     "obsidian@obsidian-skills": true,
     "skill-creator@claude-plugins-official": true,
     "bay-development@ai-dev-kit": true,
     "bay-lab-commands@ai-dev-kit": true,
-    "bay-product-design@ai-dev-kit": true
+    "bay-product-design@ai-dev-kit": true,
+    "claude-tmux@claude-tmux": true
   },
   "extraKnownMarketplaces": {
     "wings-claude-skills": {
@@ -38,20 +52,32 @@
         "url": "git@git.17bdc.com:ai-coding/ai-dev-kit.git"
       },
       "autoUpdate": true
+    },
+    "claude-tmux": {
+      "source": {
+        "source": "github",
+        "repo": "Wingsdh/claude-tmux"
+      }
     }
   },
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/wings/.claude/plugins/marketplaces/ai-dev-kit/plugins/bay-development/hooks/bay-git/scripts/check-git-commit.sh"
-          }
-        ]
-      }
-    ]
+  "mcpServers": {
+    "python-vibecoding": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/wings/Code/ai-coding/python-vibecoding-mcp-server",
+        "run",
+        "mcp_server.py"
+      ]
+    },
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "chrome-devtools-mcp@latest"
+      ]
+    }
   },
   "effortLevel": "medium",
   "skipDangerousModePermissionPrompt": true
