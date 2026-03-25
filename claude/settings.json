@@ -10,26 +10,13 @@
       "mcp__pencil"
     ]
   },
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/wings/.claude/plugins/marketplaces/ai-dev-kit/plugins/bay-development/hooks/bay-git/scripts/check-git-commit.sh"
-          }
-        ]
-      }
-    ]
-  },
   "enabledPlugins": {
     "obsidian@obsidian-skills": true,
     "skill-creator@claude-plugins-official": true,
+    "claude-tmux@claude-tmux": true,
     "bay-development@ai-dev-kit": true,
     "bay-lab-commands@ai-dev-kit": true,
-    "bay-product-design@ai-dev-kit": true,
-    "claude-tmux@claude-tmux": true
+    "bay-product-design@ai-dev-kit": true
   },
   "extraKnownMarketplaces": {
     "wings-claude-skills": {
@@ -46,20 +33,22 @@
       },
       "autoUpdate": true
     },
-    "ai-dev-kit": {
-      "source": {
-        "source": "git",
-        "url": "git@git.17bdc.com:ai-coding/ai-dev-kit.git"
-      },
-      "autoUpdate": true
-    },
     "claude-tmux": {
       "source": {
         "source": "github",
         "repo": "Wingsdh/claude-tmux"
       }
+    },
+    "ai-dev-kit": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/wings/AI-Workspace/ai-builder/ai-dev-kit"
+      },
+      "autoUpdate": true
     }
   },
+  "effortLevel": "medium",
+  "skipDangerousModePermissionPrompt": true,
   "mcpServers": {
     "python-vibecoding": {
       "type": "stdio",
@@ -78,7 +67,5 @@
         "chrome-devtools-mcp@latest"
       ]
     }
-  },
-  "effortLevel": "medium",
-  "skipDangerousModePermissionPrompt": true
+  }
 }
