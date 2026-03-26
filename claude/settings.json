@@ -16,7 +16,8 @@
     "claude-tmux@claude-tmux": true,
     "bay-development@ai-dev-kit": true,
     "bay-lab-commands@ai-dev-kit": true,
-    "bay-product-design@ai-dev-kit": true
+    "bay-product-design@ai-dev-kit": true,
+    "figma@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "wings-claude-skills": {

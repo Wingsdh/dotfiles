@@ -31,7 +31,7 @@ SECRETS
   echo "export BAY_ADMIN_ACCESS_KEY=\"$(op read 'op://Personal/bay-admin/access-key')\"" >> ~/.secrets
   echo "export BAY_ADMIN_ACCESS_SECRET=\"$(op read 'op://Personal/bay-admin/access-secret')\"" >> ~/.secrets
   echo "export SENSOR_SESSION_ID=\"$(op read 'op://Personal/sensors-data/session-id')\"" >> ~/.secrets
-  echo "export YUQUE_TOKEN=\"$(op read 'op://Personal/yuque/token')\"" >> ~/.secrets
+  echo "export YUQUE_TOKEN=\"$(op read 'op://Personal/knl7v2ssfd6k7pd72rlhzffhru/token')\"" >> ~/.secrets
   echo "export NPM_NEXUS_TOKEN=\"$(op read 'op://Personal/npm-nexus/token')\"" >> ~/.secrets
   chmod 600 ~/.secrets
   echo "~/.secrets generated!"
